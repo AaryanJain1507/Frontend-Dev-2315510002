@@ -1,0 +1,19 @@
+/* q2.css - Tooltip demo */
+*{box-sizing:border-box;font-family:system-ui;}
+body{margin:0;background:linear-gradient(180deg,#f8fafc,#eef2ff);min-height:100vh;display:flex;align-items:center;justify-content:center;}
+.center{text-align:center;padding:40px;}
+.icons{display:flex;gap:28px;justify-content:center;align-items:center;}
+.tool{position:relative;}
+.dot{display:inline-block;padding:10px 14px;border-radius:8px;background:#fff;border:1px solid #e2e8f0;cursor:default;}
+.tip{
+  position:absolute;left:50%;transform:translateX(-50%) translateY(8px);
+  bottom:120%;white-space:nowrap;padding:8px 10px;border-radius:6px;background:#0f172a;color:#fff;font-size:13px;opacity:0;pointer-events:none;
+  transition:opacity .3s ease-in-out,transform .3s ease-in-out;
+  box-shadow:0 6px 18px rgba(2,6,23,.2);
+}
+.tool:hover .tip{opacity:1;transform:translateX(-50%) translateY(0);}
+.tool:focus-within .tip{opacity:1;transform:translateX(-50%) translateY(0);}
+/* ensure tooltip stays readable on small screens */
+@media (max-width:420px){
+  .tip{font-size:12px;padding:6px 8px;}
+}

@@ -1,0 +1,8 @@
+/* q7.css - UI components */
+*{box-sizing:border-box;font-family:system-ui;}
+body{display:flex;align-items:center;justify-content:center;height:100vh;margin:0;background:linear-gradient(180deg,#eef2ff,#ffffff);}
+.card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 12px 30px rgba(2,6,23,0.08);display:flex;gap:12px;align-items:center;}
+.search{padding:10px 12px;border-radius:8px;border:1px solid #e6eef8;min-width:220px;}
+.btn{padding:10px 14px;border-radius:8px;border:0;background:#2563eb;color:#fff;cursor:pointer;}
+.menu{padding:8px;border-radius:8px;border:1px solid #e6eef8;}
+.search:focus,.menu:focus,.btn:focus{outline:3px solid rgba(37,99,235,0.12);}

@@ -1,0 +1,10 @@
+/* q8.css - Box sizing comparison */
+*{font-family:system-ui;}
+body{margin:20px;background:#f8fafc;}
+.center{text-align:center;}
+.compare{display:flex;gap:20px;justify-content:center;align-items:center;margin-top:12px;}
+.box{width:200px;padding:20px;border:4px solid #334155;border-radius:10px;}
+.default{background:#fff;}
+.borderbox{background:#fff;box-sizing:border-box;}
+.explain{max-width:700px;margin:12px auto;color:#475569;}
+@media (max-width:640px){.compare{flex-direction:column;}}
