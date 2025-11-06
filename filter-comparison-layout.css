@@ -1,0 +1,13 @@
+/* Filter Comparison Layout */
+*{box-sizing:border-box}
+body{font-family:system-ui;margin:0;padding:1rem}
+.compare{display:flex;gap:1rem;align-items:flex-start}
+.compare figure{flex:1;margin:0}
+.compare img{width:100%;display:block;border-radius:6px;transition:filter .4s ease}
+.filtered img{filter:brightness(.6)}
+.filtered:hover img{filter:none}
+
+/* Stack vertically below 700px */
+@media (max-width:700px){
+  .compare{flex-direction:column}
+}

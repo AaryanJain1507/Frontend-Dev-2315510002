@@ -1,0 +1,11 @@
+/* Responsive Typography using clamp() */
+*{box-sizing:border-box}
+body{font-family:system-ui;margin:0;padding:2rem;display:flex;align-items:center;justify-content:center;min-height:100vh}
+.typography{max-width:900px;text-align:center;padding:1rem}
+h1{font-size:clamp(1.5rem,4vw,3rem);margin:.5rem 0}
+p{font-size:clamp(1rem,2vw,1.5rem);line-height:1.6;margin:0 auto;max-width:70ch;padding:.5rem}
+
+/* Adjust line-height below 700px for readability */
+@media (max-width:700px){
+  p{line-height:1.8;padding:1rem}
+}

@@ -1,0 +1,19 @@
+/* Responsive Dashboard Summary using CSS Grid */
+*{box-sizing:border-box}
+body{font-family:system-ui;margin:0;padding:0;background:#eef2f7}
+.dashboard{display:grid;grid-template-columns:250px 1fr;grid-template-rows:auto 1fr;min-height:100vh;gap:1rem}
+.header{grid-column:1/-1;padding:1rem;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.sidebar{padding:1rem;background:#fff}
+.content{padding:1rem}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.card{background:#fff;padding:1rem;border-radius:8px;transition:transform .2s ease,box-shadow .2s ease}
+.card:hover{transform:scale(1.02);box-shadow:0 8px 20px rgba(0,0,0,.08)}
+@keyframes load{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.cards{animation:load .6s ease both}
+
+/* Below 750px: sidebar shifts to top and content stacks */
+@media (max-width:750px){
+  .dashboard{grid-template-columns:1fr;grid-template-rows:auto auto 1fr}
+  .sidebar{order:0}
+  .cards{grid-template-columns:1fr}
+}
