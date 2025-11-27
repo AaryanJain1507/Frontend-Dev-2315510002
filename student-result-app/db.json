@@ -1,0 +1,39 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Aaryan Jain",
+      "section": "CB",
+      "marks": 85,
+      "grade": "A"
+    },
+    {
+      "id": "2",
+      "name": "Barkha Sharma",
+      "section": "CB",
+      "marks": 82,
+      "grade": "A"
+    },
+    {
+      "id": "0dbf",
+      "name": "Aaryan Jain",
+      "section": "CB",
+      "marks": 100,
+      "grade": "O"
+    },
+    {
+      "id": "a7a4",
+      "name": "Aaryan Jain",
+      "section": "CB",
+      "marks": 90,
+      "grade": "O"
+    },
+    {
+      "id": "95c8",
+      "name": "Pappu Don",
+      "section": "CB",
+      "marks": 70,
+      "grade": "C"
+    }
+  ]
+}
